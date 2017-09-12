@@ -1,0 +1,32 @@
+﻿body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+    background-color: #ccb3ff;
+}
+h2 
+{
+    width: 700px;
+}
+.standard-paragraph 
+{
+    width: 650px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.dye-type
+{
+    padding-left: 100px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid black;
+}
+.dyes
+{
+    width: 350px;
+}
+.hair-pic-first, .hair-pic-second 
+{
+    display: inline-block;
+    margin-left: 15px;
+}
