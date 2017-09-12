@@ -17,15 +17,28 @@ h2
     margin-bottom: 25px;
     margin-left: 10px;
 }
-a
+a:link
 {
     text-decoration: none;
     font-weight: bold;
     color: #0033cc;
 }
+a:visited
+{
+    color: #0033cc;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: #ff0080;
+}
+.to-do-list
+{
+
+}
 .hair-comparison 
 {
-    margin-left: 80px;
+    margin-left: 130px;
 }
 .dye-type
 {
