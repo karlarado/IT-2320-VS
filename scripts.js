@@ -22,5 +22,10 @@ function pictureBorderChange(div) {
 
     div.style.borderColor = "blue";
  
+}
 
+// onclick button to change background color
+
+function myFunction(button) {
+    document.body.style.backgroundColor = "pink";
 }
