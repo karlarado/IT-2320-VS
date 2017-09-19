@@ -20,13 +20,7 @@ function pictureBorderChange(div) {
     this only highlights the first object in the array, which is useful but not what I wanted.
     */
 
-    if (div.className == "hair-pic")
-    {
-        div.style.borderColor = "blue";
-    }
-    else 
-    {
-        div.className = "hair-pic";
-    }
+    div.style.borderColor = "blue";
+ 
 
 }
