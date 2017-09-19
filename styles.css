@@ -21,6 +21,11 @@ ul
 {
     list-style-type: circle;
 }
+.li-highlight
+{
+    font-weight: bold;
+    color: blue;
+}
 a:link
 {
     text-decoration: none;
@@ -59,10 +64,11 @@ a:hover
 }
 .dyes
 {
-    width: 350px;
+    width: 374px;
 }
-.hair-pic-first, .hair-pic-second 
+.hair-pic
 {
     display: inline-block;
     margin-left: 15px;
+    border: thick solid purple;
 }

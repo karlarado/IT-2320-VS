@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+    <script src="scripts.js"></script>
+
     <h1>Hair Dye - What to Use</h1>
     <div class="standard-paragraph">
         So you're thinking about dyeing your hair a crazy color! That's great!
@@ -16,11 +19,11 @@
     <div class="to-do-list">
         <h2>Things You'll Need</h2>
         <ul>
-            <li>Salon Brand Hair Dye</li>
-            <li>Professional Hair Dresser</li>
-            <li>Salon Brand Color Treated Shampoo</li>
-            <li>Color Depositing Conditioner</li>
-            <li>Towel for Sleeping on the First Night</li>
+            <li onmouseover="MouseOverListItem(this)" onmouseout="MouseOutListItem(this)">Salon Brand Hair Dye</lionmouseover="MouseOverListItem(this)">
+            <li onmouseover="MouseOverListItem(this)" onmouseout="MouseOutListItem(this)">Professional Hair Dresser</lionmouseover="MouseOverListItem(this)">
+            <li onmouseover="MouseOverListItem(this)" onmouseout="MouseOutListItem(this)">Salon Brand Color Treated Shampoo</lionmouseover="MouseOverListItem(this)">
+            <li onmouseover="MouseOverListItem(this)" onmouseout="MouseOutListItem(this)">Color Depositing Conditioner</lionmouseover="MouseOverListItem(this)">
+            <li onmouseover="MouseOverListItem(this)" onmouseout="MouseOutListItem(this)">Towel for Sleeping on the First Night</lionmouseover="MouseOverListItem(this)">
         </ul>
     </div>
     <h2>Cheaper is not always better</h2>
@@ -33,15 +36,15 @@
             <div class="dye-type">Store Bought Dye</div>
         </div>
         <div class="dyes">
-            <div class="hair-pic-first"><img src="HairPurple1.jpg" width="150"></div>
-            <div class="hair-pic-second"><img src="HairPurple2.jpg" width="150"></div>
+            <div class="hair-pic" onclick="pictureBorderChange(this)" ><img src="HairPurple1.jpg" width="150"></div>
+            <div class="hair-pic" onclick="pictureBorderChange(this)" ><img src="HairPurple2.jpg" width="150"></div>
         </div>
         <div class="dyes">
             <div class="dye-type">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salon Dye</div>
         </div>
         <div class="dyes">
-            <div class="hair-pic-first"><img src="HairBlue1.jpg" width="150" height="200"></div>
-            <div class="hair-pic-second"><img src="HairBlue2.jpg" width="150"></div>
+            <div class="hair-pic" onclick="pictureBorderChange(this)" ><img src="HairBlue1.jpg" width="150" height="200"></div>
+            <div class="hair-pic" onclick="pictureBorderChange(this)" ><img src="HairBlue2.jpg" width="150"></div>
         </div>
     </div>
     <div class="standard-paragraph">
