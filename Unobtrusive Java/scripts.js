@@ -17,7 +17,7 @@ window.onload = function Load(){
     // mouseover color change
 
     function MouseOverListItem(li) {
-        this.className = "blue";
+        this.className = "li-hilight";
     }
 
     function MouseOutListItem(li) {
