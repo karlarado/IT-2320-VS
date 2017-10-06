@@ -4,29 +4,38 @@ window.onload = function Load(){
 
     for (var i = 0; i < listHover.length; i++) {
         listHover[i].addEventListener("mouseover", MouseOverListItem);
-       // listHover[i].addEventListener("mouseout", MouseOutListItem);
     }
 
     var colorButton = document.getElementsByClassName("topButton")[0];
     colorButton.addEventListener("click", backgroundColor)
 
     var picBorder = document.getElementsByClassName("hair-pic");
-    picBorder.addEventListener("click", picBorderChange)
+
+    for (var j = 0; j < picBorder.length; j++) {
+        picBorder[j].addEventListener("click", picBorderChange)
+    }
 }
 
     // mouseover color change
 
     function MouseOverListItem(li) {
-        this.className = "li-hilight";
+        alert();
+
     }
 
-    function MouseOutListItem(li) {
-        this.className = "listObject";
-    }
+    // click on images to change border color
 
     function picBorderChange(div) {
 
-        div.style.borderColor = "blue";
+        if (this.className == "hair-pic") {
+
+            this.style.borderColor = "#0000ff";
+        }
+
+        else {
+
+            this.className = "hair-pic";
+        }
 
     }
 
