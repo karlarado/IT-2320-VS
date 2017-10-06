@@ -1,17 +1,17 @@
-window.onload = function Load()
-
-{
+window.onload = function Load(){
 
     var listHover = document.getElementsByClassName("listObject");
 
     for (var i = 0; i < listHover.length; i++) {
         listHover[i].addEventListener("mouseover", MouseOverListItem);
-        listHover[i].addEventListener("mouseout", MouseOutListItem);
+       // listHover[i].addEventListener("mouseout", MouseOutListItem);
     }
 
-    var backgroundButton = document.getElementsByClassName("topButton");
-    backgroundButton = addEventListener("click", backgroundColor)
+    var colorButton = document.getElementsByClassName("topButton")[0];
+    colorButton.addEventListener("click", backgroundColor)
 
+    var picBorder = document.getElementsByClassName("hair-pic");
+    picBorder.addEventListener("click", picBorderChange)
 }
 
     // mouseover color change
@@ -24,10 +24,7 @@ window.onload = function Load()
         this.className = "listObject";
     }
 
-
-    // onclick picture border color change
-
-    function pictureBorderChange(div) {
+    function picBorderChange(div) {
 
         div.style.borderColor = "blue";
 
@@ -35,6 +32,6 @@ window.onload = function Load()
 
     // click on button to change background color
 
-    function backgroundColor(button) {
+    function backgroundColor(div) {
         document.body.style.backgroundColor = "pink";
     }
