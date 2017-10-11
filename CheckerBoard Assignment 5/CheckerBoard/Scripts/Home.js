@@ -12,11 +12,20 @@
         cell.css("background-color", isDark ? "navy" : "white");
     }
 
-   $(".cell").click(function()
-    {
-        $(this).css("border", "1px solid yellow");
+    var holding = false;
+
+    $(".piece").click(function () {
+        if (holding == false) {
+            if ($(this).hasClass("red") || $(this).hasClass("black")) {
+                $(this).css("border", "1px solid yellow");
+                holding = true;
+            }
+        }
+        if (holding == true) {
+            
+        }
     }
-    )
+     );
     
 
 });
