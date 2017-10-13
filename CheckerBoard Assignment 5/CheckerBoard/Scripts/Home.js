@@ -20,20 +20,23 @@
             if ($(this).hasClass("red") || $(this).hasClass("black")) {
                 $(this).css("border", "1px solid red");
                 holding = true;
-                pickedUp = element;
+                pickedUp = this;
 
             }
         }
-        else {
-            dropIt = function (targetElement) {
-                targetElement.className = pickedUp.className;
-                $(this).css("boarder", "1px solid black");
+        else if (!($(this).hasClass("red") || $(this).hasClass("black"))){
+                this.className = pickedUp.className;
+                $(pickedUp).css("border", "1px solid black");
                 pickedUp.className = "cell";
                 holding = false;
                 pickedUp = {};
-            }
+            
         }
-    }
-     ); 
+        else {
+            $(pickedUp).css("border", "1px solid black");
+            holding = false;
+        }
+
+    });
 
 });
