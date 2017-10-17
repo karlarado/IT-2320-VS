@@ -1,4 +1,3 @@
-// JavaScript source code
 var main = {};
 
 main.Planet = function (planetName, planetColor, numberMoons)
@@ -17,4 +16,15 @@ main.Saturn = new main.Planet("Saturn", "gold", 62);
 main.Uranus = new main.Planet("Uranus", "blue", 27);
 main.Neptune = new main.Planet("Neptune", "blue", 13);
 
-// document.body.innerHTML =
+main.Planet.prototype.StatePlanetColor = function ()
+{
+    return this.name + " is " + this.color + ".";
+}
+
+main.Planet.prototype.StatePlanetMoons = function () {
+    return this.name + " has " + this.moons + " moon(s)!";
+}
+
+document.body.innerHTML = main.Saturn.StatePlanetColor();
+document.body.innerHTML += "<p/>";
+document.body.innerHTML += main.Jupiter.StatePlanetMoons();
