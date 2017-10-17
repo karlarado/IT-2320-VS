@@ -48,7 +48,7 @@ main.Planets = {
 }
 
 
-main.Planets.prototype.GetName = function () {
+main.Planets.planets.prototype.GetName = function () {
     return this.name;
 }
 
