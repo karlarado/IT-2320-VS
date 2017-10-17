@@ -48,15 +48,11 @@ main.Planets = {
 }
 
 
-function displayPlanet() {
-
-    alert(main.Planets.galaxy);
-
-};
+main.Planets.prototype.GetName = function () {
+    return this.name;
+}
 
 $(document).ready(function () {
-    
-    displayPlanet();
-    
-});
+    $("div").after(main.GetName);
+})
 
