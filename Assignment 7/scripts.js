@@ -46,3 +46,17 @@ main.Planets = {
         }
     ]
 }
+
+
+function displayPlanet() {
+
+    alert(main.Planets.galaxy);
+
+};
+
+$(document).ready(function () {
+    
+    displayPlanet();
+    
+});
+
