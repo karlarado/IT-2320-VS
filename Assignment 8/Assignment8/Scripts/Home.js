@@ -10,7 +10,7 @@ $(document).ready(function () {
             data: { PlayerNumber: textbox.val() },
             success: function (stringResponse) {
                 response = JSON.parse(stringResponse);
-                outut.html(response.PlayerName);
+                output.html(response.PlayerName);
             }
         });
     });
