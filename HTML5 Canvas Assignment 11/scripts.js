@@ -31,7 +31,11 @@ Main.Box = function (x, y, w, h) {
 
         this.X = this.X + 3;
 
-        if
+        if (this.X > 600)
+        {
+            this.X = 0;
+        }
+
      
         Main.Context.fillRect(this.X, this.Y, this.Height, this.Width);
     }
@@ -87,7 +91,7 @@ Main.Animate = function ()
     }
 
     Main.Context.font = "30px Arial";
-    Main.Context.fillText("X: " + Main.MX + "  Y: " + Main.MY + " Speed is " + Main.speed + " " + Main.MousePressed, 60, 60);
+    Main.Context.fillText("X: " + Main.MX + "  Y: " + Main.MY, 60, 60);
 
     requestAnimFrame(function () { Main.Animate(); });
 }
