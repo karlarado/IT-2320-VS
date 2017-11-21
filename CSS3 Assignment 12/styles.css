@@ -2,7 +2,7 @@
     width: 100%;
     height: 700px;
     margin-top: 0px;
-    padding-top: 140px;
+    padding-top: 120px;
     background: -webkit-linear-gradient(white, grey, black);
     background: -o-linear-gradient(white, grey, black);
     background: -moz-linear-gradient(white, grey, black);
@@ -10,53 +10,107 @@
 }
 
 .outBlock {
+    color: black;
+    text-align: center;
+    font-family: fancyFont;
+    font-size: 0px;
     margin: auto;
-    margin-top: 140px;
+    margin-top: 120px;
     width: 70px;
     height: 70px;
     background-color: black;
     animation-name: spin;
     animation-duration: 5s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 6;
     animation-delay: 2s;
+    animation-direction: alternate;
 }
 
 @keyframes spin {
     0% {
+        font-size: 0.5px;
         transform: rotate(36deg);
+        background-image: none;
     }
     10% {
+        width: 90px;
+        height: 90px;
+        font-size: 1px;
         transform: rotate(72deg);
+        background-image: none;
     }
     20% {
+        width: 110px;
+        height: 110px;
+        font-size: 2px;
         transform: rotate(108deg);
+        background-image: none;
     }
     30% {
+        width: 140px;
+        height: 140px;
+        font-size: 8px;
         transform: rotate(144deg);
+        background-image: none;
     }
     40% {
+        width: 160px;
+        height: 160px;
+        color: grey;
+        font-size: 12px;
         transform: rotate(180deg);
+        background-image: none;
     }
     50% {
+        width: 190px;
+        height: 190px;
+        color: lightgrey;
+        font-size: 15px;
         transform: rotate(216deg);
+        background-image: none;
     }
     60% {
+        width: 210px;
+        height: 210px;
+        color: white;
+        font-size: 17px;
         transform: rotate(252deg);
+        background-image: none;
     }
     70% {
+        width: 230px;
+        height: 230px;
+        color: white;
+        font-size: 19px;
         transform: rotate(288deg);
+        background-image: url("emohair.jpg");
     }
     80% {
+        width: 260px;
+        height: 260px;
+        color: white;
+        font-size: 22px;
         transform: rotate(324deg);
+        background-image: url("emohair.jpg");
     }
     90% {
+        width: 340px;
+        height: 340px;
+        color: white;
+        font-size: 25px;
         transform:rotate(360deg);
+        background-image: url("emohair.jpg");
     }
     100% {
-        
+        width: 400px;
+        height: 400px;
+        color: white;
+        font-size: 30px;
+        background-image: url("emohair.jpg");
     }
 }
 
 @font-face {
-
+    font-family: fancyFont;
+    src: url(freebooterscript.ttf);
 }
