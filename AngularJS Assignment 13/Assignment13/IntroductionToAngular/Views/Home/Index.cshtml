@@ -10,9 +10,11 @@
     <body>
 
         <div ng-app="my-module" ng-controller="my-root-controller">
-            <p>
-
-            </p>
+            <ol>
+                <li ng-repeat="x in players">
+                    {{x.FirstName + " " + x.LastName}}
+                </li>
+            </ol>
         </div>
         
 
