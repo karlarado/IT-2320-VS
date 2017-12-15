@@ -5,6 +5,28 @@
     background-color: rgba(0, 180, 170, 0.81);
 }
 
+.header {
+    
+    font-family: "Cambria";
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.subheader {
+    font-family: Calibri;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.view{
+    border: 2px grey;
+    margin: 12px auto;
+    padding: 16px;
+    background-color: lightgrey;
+    width: 90%;
+}
+
 .haveAccount {
     margin-bottom: 12px;
     padding-bottom: 16px;
@@ -25,12 +47,21 @@
 
 .descriptCreate {
     display: inline-block;
-    width: 40%;
     float: left;
     padding: 40px 15px 0px 0px;
+    width: 40%;
 }
 
 .createInfo {
     display: inline-block;
     width: 60%;
+}
+
+.button {
+    display: inline-block;
+    float: right;
+    margin-top: 11px;
+    background-color: lightblue;
+    border-radius: 11px;
+    width: 111px;
 }
