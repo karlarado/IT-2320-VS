@@ -1,1 +1,36 @@
-﻿
+﻿body {
+    width: 520px;
+    font-family: Calibri;
+    font-size: 12px;
+    background-color: rgba(0, 180, 170, 0.81);
+}
+
+.haveAccount {
+    margin-bottom: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid blue;
+}
+
+.descriptLogin {
+    display: inline-block;
+    padding-top: 22px;
+    vertical-align: top;
+    width: 40%;
+}
+
+.loginInfo {
+    display: inline-block;
+    width: 50%;
+}
+
+.descriptCreate {
+    display: inline-block;
+    width: 40%;
+    float: left;
+    padding: 40px 15px 0px 0px;
+}
+
+.createInfo {
+    display: inline-block;
+    width: 60%;
+}
