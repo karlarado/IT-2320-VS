@@ -45,6 +45,16 @@
     width: 50%;
 }
 
+.label {
+    display: inline-block;
+    padding: 13px 0px;
+    width: 43%;
+}
+
+.new {
+    width: 50%;
+}
+
 .descriptCreate {
     display: inline-block;
     float: left;
@@ -64,4 +74,16 @@
     background-color: lightblue;
     border-radius: 11px;
     width: 111px;
+}
+.firstView {
+    position: relative;
+    width: 482px;
+}
+
+.secondView {
+    position: relative;
+    display: none;
+    left: 299px;
+    width: 482px;
+    
 }
