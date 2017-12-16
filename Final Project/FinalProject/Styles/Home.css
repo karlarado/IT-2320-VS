@@ -67,6 +67,17 @@
     width: 60%;
 }
 
+.error {
+    display: none;
+    color: red;
+    width: 100% !important;
+}
+.success.create {
+    display: none;
+    color: lightgreen;
+    width: 69%;
+}
+
 .button {
     display: inline-block;
     float: right;
@@ -86,4 +97,32 @@
     left: 299px;
     width: 482px;
     
+}
+
+@media only screen and (max-width:480px) {
+
+    .content {
+        display: none;
+    }
+
+    body {
+        margin: auto;
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .header, .subheader {
+        text-align: center;
+    }
+
+    .logIn, .accountCreation {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    body {
+        width: 300px;
+    }
 }
