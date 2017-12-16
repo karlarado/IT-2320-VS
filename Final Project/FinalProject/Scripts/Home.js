@@ -16,20 +16,22 @@ Home.logIn = function() {
             "Username": username,
             "Password": password
         }
-}
+    }
+  )};
 
 //variables defined for account creation
+
 Home.createAccount = function() {
 
     var username;
     var password;
     var email;
-    var reEmail;
+    var repeatEmail;
 
     var username = $(".create.username").val();
     var password = $(".create.password").val();
     var email = $(".create.email").val();
-    var reEmail = $(".create.reEmail").val();
+    var repeatEmail = $(".create.repeatEmail").val();
 
     $.ajax({
         url: "Home/CreateAccount",
@@ -37,21 +39,22 @@ Home.createAccount = function() {
             "Username": username,
             "Password": password,
             "EmailAdd": email,
-            "EmailCon": reEmail
+            "EmailCon": repeatEmail
         }
+    }
 
-}
+)};
 
 //functions called
 
-$(document).ready(function () {
+$(document).ready(function() {
 
-        $(".createButton").click(function()
+    $(".loginButton").click(function() {
+            Home.logIn()
+        });
+    $(".createAccountButton").click(function()
         {
             Home.createAccount()
         });
-
-        $(".logInButton").click(function () {
-            Home.logIn()
-        });
-    });
+  
+});
