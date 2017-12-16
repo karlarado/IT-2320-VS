@@ -15,9 +15,25 @@ Home.logIn = function() {
         data: {
             "Username": username,
             "Password": password
+        },
+        success: function(stringResponse) {
+            response = JSON.parse(stringResponse);
+            if (response.Message === "Error") {
+                $(".error.logIn").css("display", "block");
+            }
+            else if (response.Message === "Success") {
+                $(".view").css("border", "1px solid lightgreen");
+                Home.getInformation();
+                $(".firstView").animate({
+                    right: '1000px'
+                }, "slow", function () { $(".firstView").hide(); $(".secondView").show().animate({ left: '6px' }); });
+
+            }
         }
-    }
-  )};
+
+    });
+
+}
 
 //variables defined for account creation
 
