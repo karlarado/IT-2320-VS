@@ -18,21 +18,21 @@ Home.logIn = function() {
         },
         success: function(stringResponse) {
             response = JSON.parse(stringResponse);
+
             if (response.Message === "Error") {
                 $(".error.logIn").css("display", "block");
             }
             else if (response.Message === "Success") {
                 $(".view").css("border", "1px solid lightgreen");
                 Home.getInformation();
+
                 $(".firstView").animate({
                     right: '1000px'
                 }, "slow", function () { $(".firstView").hide(); $(".secondView").show().animate({ left: '6px' }); });
 
             }
         }
-
     });
-
 }
 
 //variables defined for account creation
@@ -56,10 +56,20 @@ Home.createAccount = function() {
             "Password": password,
             "EmailAdd": email,
             "EmailCon": repeatEmail
-        }
-    }
+        },
+        success: function (stringResponse) {
+            response = JSON.parse(stringResponse);
 
-)};
+            if (response.Message === "Error") {
+                $(".error.create").css("display", "block");
+            }
+            else if (response.Message === "Success") {
+                $(".view").css("border", "1px solid lightgreen");
+                $(".success.create").show();
+            }
+        }
+    });
+}
 
 //functions called
 
@@ -72,5 +82,4 @@ $(document).ready(function() {
         {
             Home.createAccount()
         });
-  
 });
